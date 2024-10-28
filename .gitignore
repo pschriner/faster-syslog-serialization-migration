@@ -2,3 +2,4 @@ public
 vendor
 .idea
 .vscode
+composer.lock
