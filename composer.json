@@ -1,0 +1,38 @@
+{
+    "name": "pschriner/faster-syslog-serialization-migration",
+    "description": "Precalculate sys_log migration to allow a faster migration",
+    "keywords": [
+      "typo3",
+      "updates"
+    ],
+    "authors": [
+      {
+        "name": "Patrick Schriner",
+        "email": "patrick.schriner@diemedialen.de",
+        "role": "Developer"
+      }
+    ],
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0",
+    "time": "2024-10-29",
+    "require": {
+      "typo3/cms-core": "^10.4 || ^11.5 || ^12.4 || ^13.4",
+      "typo3/cms-install": "^10.4 || ^11.5 || ^12.4 || ^13.4"
+    },
+    "extra": {
+      "typo3/cms": {
+        "extension-key": "faster_syslog_serialization_migration"
+      }
+    },
+    "autoload": {
+      "psr-4": {
+        "Pschriner\\FasterSyslogSerializationMigration\\": "Classes"
+      }
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true
+        }
+    }
+}

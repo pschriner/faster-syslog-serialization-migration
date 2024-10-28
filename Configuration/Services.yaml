@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Pschriner\FasterSyslogSerializationMigration\:
+    resource: '../Classes/*'
+
+  Pschriner\FasterSyslogSerializationMigration\Command\AddJsonLogDataCommand:
+    tags:
+      - name: 'console.command'
+        command: 'pschriner:migratetojsonlogdata'
